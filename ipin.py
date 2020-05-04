@@ -3,7 +3,7 @@ from flask import Flask,render_template,request
 import folium
 import webbrowser
 app = Flask(__name__)
-print("post-commit is going on ............. yes dene.........")
+print("post-commit is going on ............. yes dene...........")
 reader=geoip2.database.Reader('./GeoLite2-City_20200428/GeoLite2-City.mmdb')
 @app.route("/")
 def index():
