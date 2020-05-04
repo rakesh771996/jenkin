@@ -18,7 +18,7 @@ def profile1():
 
 
 	m=folium.Map(location=[lat,lang],zoom_start = 15)
-	folium.Marker(location=[lat,lang],icon=folium.Icon(color='red'),popup="<h4> country "+response.country.name+"<br>City: "+response.city.name+"<br></h4>").add_to(m)
+	folium.Marker(location=[lat,lang],icon=folium.Icon(color='blue'),popup="<h4> country "+response.country.name+"<br>City: "+response.city.name+"<br></h4>").add_to(m)
 	m.save('C:\\Users\\Rakesh\\Desktop\\project\\templates\\index.html')
 	return render_template('index.html')
 
